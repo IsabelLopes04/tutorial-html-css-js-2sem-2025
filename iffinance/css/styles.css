@@ -67,5 +67,22 @@ footer {
 }
 .wrapper{
     margin: 0 auto;
-    width: 1000px;
+  
 }
+
+section{
+   display: flex;
+    margin: 0;
+justify-content: center;
+
+}
+
+.pou{
+    width: 400px;
+    margin: 40px 15px ;
+    height: 400px;
+    background-color: #ec7b11;
+    border-radius: 20px;
+
+}
+
