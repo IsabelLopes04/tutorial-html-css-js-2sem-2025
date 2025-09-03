@@ -1,7 +1,7 @@
 # Tópicos Importantes
 
 ## HTML
-- Doctype html 5
+- Doctype html 5 - versão do HTML
 - Estrutura Básica do HTML
     - html, head, title, body
 - Tag Style
@@ -31,3 +31,6 @@
 - git config --global user.name "Renan Cavichi"
 - git config --global user.email "renancavichi@gmail.com"
 - git init (inicia o git em um projeto ou pasta)
+- git clone <url>  - clonar repositorio remoto 
+- git add . - Adiciona todos os arquivos modificados ao staging. 
+- git log - Exibe o histórico de commits.
