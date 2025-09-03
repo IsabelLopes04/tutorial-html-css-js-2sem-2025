@@ -1,18 +1,26 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #F5F7FA;
+    background-color: #a2a9b3;
     color: #ec7b11;
     color: #FFF;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
+
+
+
 header {
     height: 90px;
     background-color: black;
 }
+
+
+
 header .wrapper .flexrow{
     align-items: center;
 }
+
+
 
 header .wrapper{
    display: flex;
@@ -20,13 +28,21 @@ header .wrapper{
    align-items: center;
 }
 
+
+
 header nav ul{
     display: flex;
 }
 
+
+
 header nav ul li{
     list-style-type: none;
+    display: flex;
+    align-items: center;
 }
+
+
 
 header nav ul li a{
     padding: 32px 20px;
@@ -34,43 +50,70 @@ header nav ul li a{
     text-decoration: none;
 }
 
+
+
+header nav ul li button{
+    background-color: #ec7b11;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 0 0 15px;
+    cursor: pointer;
+}
+
+
+
 header nav ul li a:hover, .active{
     border-bottom: 2px solid #ec7b11;
     color: #ec7b11;
 }
 
 
-/* header nav{
-    margin: 0 0 0 auto;
-} */
 
 header img{
     width: 50px;
     height: 50px;
 }
 
+
+
 .flexrow{
     display: flex;
     gap: 20px;
 }
+
+
+
 aside {
     width: 200px;
     min-height: calc(100vh - 210px);
     background-color: bisque;
 }
+
+
+
 main {
     width: 100%;
     min-height: calc(100vh - 210px);
 }
+
+
+
 footer {
     height: 120px;
     background-color: black;
 
 }
+
+
+
 .wrapper{
     margin: 0 auto;
   
 }
+
+
 
 section{
    display: flex;
@@ -78,6 +121,8 @@ section{
 justify-content: center;
 
 }
+
+
 
 .pou{
     width: 400px;
@@ -88,6 +133,7 @@ justify-content: center;
 }
 
 
+
 H1 {
     font-size: 45px;
     margin: 20px;
@@ -95,17 +141,27 @@ H1 {
     justify-content: center;
 }
 
+
+
 H2 {
     margin: 20px;
 }
 
+
+
 H3 {
     margin: 20px;
 }
-p {
-    margin: 20px;
 
+
+
+p {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
+
+
 
 sectionp {
    display: flex;
@@ -114,11 +170,16 @@ justify-content: center;
 font-size: 20px;
 }
 
+
+
 sectionn {
    display: flex;
     margin: 0;
 justify-content: end;
 }
+
+
+
 img {
       width: 100%;
      max-height: 100px;
@@ -126,4 +187,96 @@ img {
       margin-top: 15px;
       border-radius: 8px;
     }
+
+
+
+.modal {
+    background-color: #1e293b98;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none ;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modal main {
+    background: #ffffff;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+
+
+.modal main h1{
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+
+
+.modal main label {
+    color: black;
+    margin: 10px 0 0 0;
+}
+
+
+
+.modal main form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+
+
+
+.modal main form input {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+
+.modal main form select {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+
+.modal main form input[type="submit"] {
+    font-size: 18px;
+       background-color: #ec7b11;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 15px 0 0 0;
+    cursor: pointer;
+}
+
+button {
+    font-size: 18px;
+      background-color: #ec7b11;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 15px 0 0 0;
+    cursor: pointer;
+}
+
+#cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 

@@ -4,6 +4,20 @@
 <head>
     <title>IFFinance</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- <script>
+        //alert("Atenção")
+
+
+        let nome = "Isabel" // pode ser alterada
+        const rua = "Rua DR° Bráulio Pereira Barreto" // nao posso alterar valor de uma constante
+        var idade = "38" //pode ser alterada
+
+           nome = "Paraty"
+           idade = "40"
+
+
+        console.log(idade)
+    </script> -->
 </head>
 
 <body>
@@ -18,17 +32,21 @@
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="contato.html">Contato</a></li>
+                    <li> <button onclick="openModal()"> Adicionar ativos </button></li>
                 </ul>
             </nav>
 
 
         </div>
-       
+    
     </header>
      <p style="font-size: 25px; color: #1E293B;"><b> Ativos da NYSE e Nasdaq </b></p>
     <div class="wrapper">
+
             <section id="section">
-            
+
+             <div id = "cards">  
+
                 <div class="pou">
                     <sectionp>
 
@@ -41,7 +59,7 @@
 
                     <sectionp>
                         <p><b> 12 ativos</b></p>
-                        <p><b>Posição = R$1.800,00</b></p>
+                        <p><b>R$1.800,00</b></p>
                     </sectionp>
 
                     <sectionn>
@@ -61,7 +79,7 @@
 
                     <sectionp>
                         <p><b> 10 ativos</b></p>
-                        <p><b>Posição = R$2.000,00</b></p>
+                        <p><b>R$2.000,00</b></p>
                     </sectionp>
 
                     <sectionn>
@@ -85,7 +103,7 @@
 
                     <sectionp>
                         <p><b> 12 ativos</b></p>
-                        <p><b>Posição = R$1.200,00</b></p>
+                        <p><b>R$1.200,00</b></p>
                     </sectionp>
 
                     <sectionn>
@@ -93,10 +111,7 @@
                     </sectionn>
                 </div>
                 
-        
-        </section>
-
-         <section id="section">
+    
             
                 <div class="pou">
                     <sectionp>
@@ -110,7 +125,7 @@
 
                     <sectionp>
                         <p><b> 15 ativos</b></p>
-                        <p><b>Posição = R$3.000,00</b></p>
+                        <p><b>R$3.000,00</b></p>
                     </sectionp>
 
                     <sectionn>
@@ -120,17 +135,17 @@
                 </div>
                 <div class="pou">
                      <sectionp>
-
-                         <p><b> KO </b></p>
-                         <p><b> NYSE</b></p>
-
+                    
+                             <p><b> KO </b></p>
+                            <p><b> NYSE</b></p>
+                      
                     </sectionp>
 
                          <h1 style="color: rgb(255, 0, 0);"> -  R$90,00 </h1>
 
                     <sectionp>
                         <p><b> 20 ativos</b></p>
-                        <p><b>Posição = R$1.800,00</b></p>
+                        <p><b>R$1.800,00</b></p>
                     </sectionp>
 
                     <sectionn>
@@ -153,17 +168,17 @@
 
                     <sectionp>
                         <p><b> 10 ativos</b></p>
-                        <p><b>Posição = R$1.600,00</b></p>
+                        <p><b>R$1.600,00</b></p>
                     </sectionp>
 
                     <sectionn>
                         <img src="img/grafico.png">
                     </sectionn>
                 </div>
-        
+        </div>
         </section>
 
-    </div>
+    
     </div>
 
     <footer>
@@ -171,6 +186,34 @@
 
         </div>
     </footer>
-</body>
 
+    <div class="modal">
+        <main>
+            <h1>Cadastrar</h1>
+            <form onsubmit="cadastrarTicker(event)">
+                    <label>Ticker</label>
+                    <input type="text" id="Ticker" name="Ticker">
+
+                     <label>Bolsa</label>
+                    <select id="Bolsa" name="Bolsa"> 
+                        <option value="Nasdaq">Nasdaq</option>
+                        <option value="NYSE">NYSE</option>
+                    </select>
+
+                     <label>Valor</label>
+                    <input type="text" id="Valor" name="Valor">
+
+                     <label>Ativos</label>
+                    <input type="text" id="Ativos" name="Ativos">
+
+                    <input type="submit" value="Cadastrar">
+
+                    <button type="button" onclick="closeModal()">Fechar</button>
+
+            </form>
+        </main>
+    </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
 </html>
