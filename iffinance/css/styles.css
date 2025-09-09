@@ -125,6 +125,7 @@ justify-content: center;
 
 
 .pou{
+    position: relative;
     width: 400px;
     margin: 40px 15px ;
     height: 350px;
@@ -253,7 +254,7 @@ img {
 
 .modal main form input[type="submit"] {
     font-size: 18px;
-       background-color: #ec7b11;
+    background-color: #ec7b11;
     color: rgb(255, 255, 255);
     padding: 10px 15px;
     border-radius: 10px;
@@ -264,7 +265,7 @@ img {
 
 button {
     font-size: 18px;
-      background-color: #ec7b11;
+    background-color: #ec7b11;
     color: rgb(255, 255, 255);
     padding: 10px 15px;
     border-radius: 10px;
@@ -280,3 +281,20 @@ button {
     gap: 20px;
 }
 
+.buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1e293b98;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons button {
+    margin: 0;
+}

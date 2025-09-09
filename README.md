@@ -14,6 +14,8 @@
 - Externo, Interno e In-line
 - Sintaxe do código css
 - ID e Classes
+-- Class pode se repetir 
+-- ID 
 - Flexbox (display: flex e outros elementos) - https://flexboxfroggy.com/
 - seletores
   - filho de
@@ -22,7 +24,13 @@
 - medidas relatativas (% e vh e vw)
 - tipos de cores
 - font-family
-
+- queryselector pega todos 
+- queryselectorAll
+- crud  - create read update delets
+--- criação visual, cadastrar, inserir
+--- read é ler os que ja estão inseridos
+--- update é atualizar os dados
+--- delets é apagar o que foi criado
 
 ## Comandos Git
 
