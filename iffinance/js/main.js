@@ -1,10 +1,10 @@
-function openModal (){
-        const modal = document.querySelector(".modal")
+function openModal (modalId){
+        const modal = document.querySelector(modalId)
         modal.style.display = "flex"
 }
 
-function closeModal (){
-        const modal = document.querySelector(".modal")
+function closeModal (modalId){
+        const modal = document.querySelector(modalId)
         modal.style.display = "none"
 }
 
@@ -36,8 +36,8 @@ function cadastrarTicker(event){
              </sectionp>
             <div class="buttons">
 
-                    <button type="button" onclick="closeModal()">Editar</button>
-                    <button type="button" onclick="closeModal()">Excluir</button>
+                    <button type="button" onclick="openeditcard(event)">Editar</button>
+                    <button type="button" onclick="deleteCard(event)">Excluir</button>
             </div>
             <sectionn>
                 <img src="img/grafico.png">
@@ -71,5 +71,37 @@ function hideButtons (event){
 const pou = event.target
 const buttons = event.target.querySelector(".buttons")
 buttons.style.display = "none"
+
+}
+
+function deleteCard (event){
+console.log (event.target)
+const pou = event.target.closest(".pou")
+pou.remove()
+
+}
+
+function openeditcard (event){
+    
+    const buttonEdit = event.target
+    const pou = buttonEdit.closest (".pou")
+
+    const Ticker = pou.querySelector('sectionp h1').innerText 
+    const inputeditticker = document.querySelector('#editTicker')
+    inputeditticker.value = Ticker
+
+    const Bolsa = pou.querySelector('sectionp h2').innerText 
+    const inputeditbolsa = document.querySelector('#editBolsa')
+    inputeditbolsa.value = Bolsa 
+
+    const Valor = pou.querySelector('sectionp h5').innerText 
+    const inputeditvalor = document.querySelector('#editValor')
+    inputeditvalor.value = Valor
+
+    const Ativos = pou.querySelector('sectionp h4').innerText 
+    const inputeditativos = document.querySelector('#editAtivos')
+    inputeditativos.value = Ativos
+
+    openModal ('#edit')
 
 }

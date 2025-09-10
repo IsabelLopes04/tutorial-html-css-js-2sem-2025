@@ -136,7 +136,7 @@ justify-content: center;
 
 
 H1 {
-    font-size: 45px;
+    font-size: 20px;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -145,16 +145,28 @@ H1 {
 
 
 H2 {
+    font-size: 20px;
     margin: 20px;
 }
 
 
 
-H3 {
+h3 {
+    font-size: 20px;
     margin: 20px;
 }
 
+h4 {
+    font-size: 20px;
+    margin: 20px;
 
+}
+h5 {
+    font-size: 40px;
+    margin: 20px;
+    display: flex;
+        justify-content: center;
+}
 
 p {
     display: flex;

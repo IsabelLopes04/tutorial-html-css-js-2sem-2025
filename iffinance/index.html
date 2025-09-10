@@ -32,7 +32,7 @@
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <li> <button onclick="openModal()"> Adicionar ativos </button></li>
+                    <li> <button onclick="openModal(modalId)"> Adicionar ativos </button></li>
                 </ul>
             </nav>
 
@@ -50,22 +50,22 @@
                 <div class="pou" onmouseenter="showButtons(event)" onmouseleave="hideButtons(event)">
                     <sectionp>
 
-                         <p><b> AAPL </b></p>
-                         <p><b> Nasdaq</b></p>
+                         <h1><b> AAPL </b></h1>
+                         <h2><b> Nasdaq</b></h2>
 
                     </sectionp>
 
-                         <h1 style="color: rgb(0, 151, 38);">  +  R$150,00 </h1>
+                         <h5 style="color: rgb(0, 151, 38);">  +  R$150,00 </h5>
 
                     <sectionp>
-                        <p><b> 12 ativos</b></p>
-                        <p><b>R$1.800,00</b></p>
+                        <h4><b> 12 ativos</b></h4>
+                        <h3><b>R$1.800,00</b></h3>
                     </sectionp>
 
                  <div class="buttons">
 
-                    <button type="button" onclick="closeModal()">Editar</button>
-                    <button type="button" onclick="closeModal()">Excluir</button>
+                    <button type="button" onclick="openeditcard (event)">Editar</button>
+                    <button type="button" onclick="deleteCard(event)">Excluir</button>
                  </div>
 
                     <sectionn>
@@ -73,142 +73,7 @@
                     </sectionn>
         
                 </div>
-                <div class="pou" onmouseenter="showButtons(event)" onmouseleave="hideButtons(event)">
-                     <sectionp>
-
-                         <p><b> TSLA </b></p>
-                         <p><b> Nasdaq</b></p>
-
-                    </sectionp>
-
-                         <h1 style="color: rgb(255, 0, 0);"> -  R$200,00 </h1>
-
-                    <sectionp>
-                        <p><b> 10 ativos</b></p>
-                        <p><b>R$2.000,00</b></p>
-                    </sectionp>
-                    <div class="buttons">
-
-                    <button type="button" onclick="closeModal()">Editar</button>
-                    <button type="button" onclick="closeModal()">Excluir</button>
-                 </div>
-
-                    <sectionn>
-                        <img src="img/grafico.png">
-                    </sectionn>
-                </div> 
-                
-                
-
-
-                <div class="pou" onmouseenter="showButtons(event)" onmouseleave="hideButtons(event)">
-                
-                     <sectionp>
-
-                         <p><b> MSFT </b></p>
-                         <p><b> Nasdaq</b></p>
-
-                    </sectionp>
-
-                         <h1 style="color: rgb(0, 151, 38);"> +  R$100,00 </h1>
-
-                    <sectionp>
-                        <p><b> 12 ativos</b></p>
-                        <p><b>R$1.200,00</b></p>
-                    </sectionp>
-                    <div class="buttons">
-
-                    <button type="button" onclick="closeModal()">Editar</button>
-                    <button type="button" onclick="closeModal()">Excluir</button>
-                 </div>
-
-                    <sectionn>
-                        <img src="img/grafico.png">
-                    </sectionn>
-                </div>
-                
-    
             
-                <div class="pou" onmouseenter="showButtons(event)" onmouseleave="hideButtons(event)">
-                    <sectionp>
-
-                         <p><b> META </b></p>
-                         <p><b> Nasdaq</b></p>
-
-                    </sectionp>
-
-                         <h1 style="color: rgb(255, 0, 0);"> -  R$200,00 </h1>
-
-                    <sectionp>
-                        <p><b> 15 ativos</b></p>
-                        <p><b>R$3.000,00</b></p>
-                    </sectionp>
-
-                    <div class="buttons">
-
-                    <button type="button" onclick="closeModal()">Editar</button>
-                    <button type="button" onclick="closeModal()">Excluir</button>
-                 </div>
-
-                    <sectionn>
-                        <img src="img/grafico.png">
-                    </sectionn>
-
-                </div>
-                <div class="pou" onmouseenter="showButtons(event)" onmouseleave="hideButtons(event)">
-                     <sectionp>
-                    
-                             <p><b> KO </b></p>
-                            <p><b> NYSE</b></p>
-                      
-                    </sectionp>
-
-                         <h1 style="color: rgb(255, 0, 0);"> -  R$90,00 </h1>
-
-                    <sectionp>
-                        <p><b> 20 ativos</b></p>
-                        <p><b>R$1.800,00</b></p>
-                    </sectionp>
-
-                    <div class="buttons">
-
-                    <button type="button" onclick="closeModal()">Editar</button>
-                    <button type="button" onclick="closeModal()">Excluir</button>
-                 </div>
-
-                    <sectionn>
-                        <img src="img/grafico.png">
-                    </sectionn>
-                </div> 
-                
-                
-
-
-                <div class="pou" onmouseenter="showButtons(event)" onmouseleave="hideButtons(event)">
-                     <sectionp>
-
-                         <p><b> V </b></p>
-                         <p><b> NYSE</b></p>
-
-                    </sectionp>
-
-                         <h1 style="color: rgb(0, 151, 38);"> +  R$160,00 </h1>
-
-                    <sectionp>
-                        <p><b> 10 ativos</b></p>
-                        <p><b>R$1.600,00</b></p>
-                    </sectionp>
-
-                    <div class="buttons">
-
-                    <button type="button" onclick="closeModal()">Editar</button>
-                    <button type="button" onclick="closeModal()">Excluir</button>
-                 </div>
-                    <sectionn>
-                        
-                        <img src="img/grafico.png">
-                    </sectionn>
-                </div>
         </div>
         </section>
 
@@ -221,7 +86,7 @@
         </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal" id="add">
         <main>
             <h1>Cadastrar</h1>
             <form onsubmit="cadastrarTicker(event)">
@@ -242,11 +107,38 @@
 
                     <input type="submit" value="Cadastrar">
 
-                    <button type="button" onclick="closeModal()">Fechar</button>
+                    <button type="button" onclick="closeModal('#add')">Fechar</button>
 
             </form>
         </main>
     </div>
+
+
+     <div class="modal" id="edit">
+        <main>
+            <h1>Editar</h1>
+            <form onsubmit="cadastrarTicker(event)">
+                    <label>Ticker</label>
+                    <input type="text" id="editTicker" name="Ticker">
+
+                     <label>Bolsa</label>
+                    <select id="editBolsa" name="Bolsa"> 
+                        <option value="Nasdaq">Nasdaq</option>
+                        <option value="NYSE">NYSE</option>
+                    </select>
+
+                     <label>Valor</label>
+                    <input type="text" id="editValor" name="Valor">
+
+                     <label>Ativos</label>
+                    <input type="text" id="editAtivos" name="Ativos">
+
+                    <input type="submit" value="Cadastrar">
+
+                    <button type="button" onclick="closeModal('#edit')">Editar</button>
+
+            </form>
+        </main>
     </div>
 </body>
 <script src="js/main.js"></script>
