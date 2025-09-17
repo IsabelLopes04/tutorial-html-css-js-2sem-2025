@@ -51,7 +51,7 @@ function cadastrarTicker(event){
 
     cards.innerHTML += card
 
-    closeModal()
+    closeModal('#add')
 
 
     console.log(cards)
@@ -81,25 +81,26 @@ pou.remove()
 
 }
 
-function openeditcard (event){
-    
+function OpenEditTicker(event){
+
+
     const buttonEdit = event.target
     const pou = buttonEdit.closest (".pou")
 
-    const Ticker = pou.querySelector('sectionp h1').innerText 
-    const inputeditticker = document.querySelector('#editTicker')
+    const Ticker = pou.querySelector('.section1 h1').innerText 
+    const inputeditticker = document.getElementById('editTicker')
     inputeditticker.value = Ticker
 
-    const Bolsa = pou.querySelector('sectionp h2').innerText 
-    const inputeditbolsa = document.querySelector('#editBolsa')
-    inputeditbolsa.value = Bolsa 
+    const Bolsa = pou.querySelector('.section1 h2').innerText 
+    const selectEditBolsa = document.getElementById('editBolsa')
+    selectEditBolsa.value = Bolsa
 
-    const Valor = pou.querySelector('sectionp h5').innerText 
-    const inputeditvalor = document.querySelector('#editValor')
+    const Valor = pou.querySelector('section1 span ').innerText 
+    const inputeditvalor = document.getElementById('editValor')
     inputeditvalor.value = Valor
 
-    const Ativos = pou.querySelector('sectionp h4').innerText 
-    const inputeditativos = document.querySelector('#editAtivos')
+    const Ativos = pou.querySelector('section2 main span').innerText 
+    const inputeditativos = document.getElementById('editAtivos')
     inputeditativos.value = Ativos
 
     openModal ('#edit')

@@ -32,7 +32,7 @@
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <li> <button onclick="openModal(modalId)"> Adicionar ativos </button></li>
+                    <li> <button onclick="openModal('#add')"> Adicionar ativos </button></li>
                 </ul>
             </nav>
 
@@ -42,36 +42,38 @@
     </header>
      <p style="font-size: 25px; color: #1E293B;"><b> Ativos da NYSE e Nasdaq </b></p>
     <div class="wrapper">
-
+ 
             <section id="section">
 
              <div id = "cards">  
 
                 <div class="pou" onmouseenter="showButtons(event)" onmouseleave="hideButtons(event)">
-                    <sectionp>
+                    <section class="section1">
 
                          <h1><b> AAPL </b></h1>
                          <h2><b> Nasdaq</b></h2>
-
-                    </sectionp>
-
-                         <h5 style="color: rgb(0, 151, 38);">  +  R$150,00 </h5>
-
-                    <sectionp>
-                        <h4><b> 12 ativos</b></h4>
+                             <span> <h5 style="color: rgb(0, 151, 38);">  +  R$ <span>150,00 </h5></span></span>
+                    </section>
+                 
+                       
+                     
+                    <section class="section2">
+                        <main>
+                        <h4><b> <span>12 ativos</b></h4></span>
+                     
                         <h3><b>R$1.800,00</b></h3>
-                    </sectionp>
+                         </main>
+                          <img src="img/grafico.png">
+                    </section>
 
                  <div class="buttons">
 
-                    <button type="button" onclick="openeditcard (event)">Editar</button>
+                    <button type="button" onclick="OpenEditTicker(event)">Editar</button>
                     <button type="button" onclick="deleteCard(event)">Excluir</button>
                  </div>
 
-                    <sectionn>
-                        <img src="img/grafico.png">
-                    </sectionn>
-        
+                       
+            
                 </div>
             
         </div>
@@ -117,23 +119,24 @@
      <div class="modal" id="edit">
         <main>
             <h1>Editar</h1>
-            <form onsubmit="cadastrarTicker(event)">
-                    <label>Ticker</label>
+            <form onsubmit="OpenEditTicker(event)">
+                <input type="hidden" id="pou" name="pou">
+                    <label for="Ticker">Ticker</label>
                     <input type="text" id="editTicker" name="Ticker">
 
-                     <label>Bolsa</label>
+                     <label for="Bolsa">Bolsa</label>
                     <select id="editBolsa" name="Bolsa"> 
                         <option value="Nasdaq">Nasdaq</option>
                         <option value="NYSE">NYSE</option>
                     </select>
 
-                     <label>Valor</label>
+                     <label for="Valor">Valor</label>
                     <input type="text" id="editValor" name="Valor">
 
-                     <label>Ativos</label>
+                     <label for="Ativos">Ativos</label>
                     <input type="text" id="editAtivos" name="Ativos">
 
-                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Editar">
 
                     <button type="button" onclick="closeModal('#edit')">Editar</button>
 
